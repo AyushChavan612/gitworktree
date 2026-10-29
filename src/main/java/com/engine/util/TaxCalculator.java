@@ -2,6 +2,6 @@ package com.engine.util;
 
 public class TaxCalculator {
     public static double calculateTax(double amount) {
-        return amount * 0.18;
+        return Math.round((amount * 0.18) * 100.0) / 100.0;
     }
 }
